@@ -1,1 +1,12 @@
-# icopla
+# Simulations for Prospective individual patient data meta‐analysis
+## Background
+Numerous clinical trials have been initiated to find effective treatments for COVID-19. These trials have often been initiated in regions where the pandemic has already peaked. Consequently, achieving full enrollment in a single trial might require additional COVID-19 surges in the same location over several years. This has inspired us to pool individual patient data (IPD) from ongoing, paused, prematurely-terminated, or completed randomized controlled trials (RCTs) in real-time, to find an effective treatment as quickly as possible in light of the pandemic crisis. However, pooling across trials introduces enormous uncertainties in study design (e.g., the number of RCTs and sample sizes might be unknown in advance). We sought to develop a versatile treatment efficacy assessment model that accounts for these uncertainties while allowing for continuous monitoring throughout the study using Bayesian monitoring techniques.
+
+## Methods
+We provide a detailed look at the challenges and solutions for model development, describing the process that used extensive simulations to enable us to finalize the analysis plan. This includes establishing prior distribution assumptions, assessing and improving model convergence under different study composition scenarios, and assessing whether we can extend the model to accommodate multi-site RCTs and evaluate heterogeneous treatment effects. In addition, we recognized that we would need to assess our model for goodness-of-fit, so we explored an approach that used posterior predictive checking. Lastly, given the urgency of the research in the context of evolving pandemic, we were committed to frequent monitoring of the data to assess efficacy, and we set Bayesian monitoring rules calibrated for type 1 error rate and power.
+
+## Results
+The primary outcome is an 11-point ordinal scale. We present the operating characteristics of the proposed cumulative proportional odds model for estimating treatment effectiveness. The model can estimate the treatment’s effect under enormous uncertainties in study design. We investigate to what degree the proportional odds assumption has to be violated to render the model inaccurate. We demonstrate the flexibility of a Bayesian monitoring approach by performing frequent interim analyses without increasing the probability of erroneous conclusions.
+
+## Conclusion
+This paper describes a translatable framework using simulation to support the design of prospective IPD meta-analyses.
